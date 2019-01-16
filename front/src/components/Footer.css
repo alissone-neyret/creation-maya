@@ -1,0 +1,16 @@
+.Footer {
+  background-color: rgb(44, 44, 44);
+  color: white;
+  font-size: 1.2em;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+  box-shadow: -3px -3px 4px rgb(167, 167, 167);
+}
+
+.liste-footer {
+  list-style-type: none;
+  text-align: center;
+}

@@ -1,0 +1,12 @@
+.Banniere {
+  margin-bottom: 3%;
+  margin-top: 3%;
+}
+
+.container-banniere {
+  background-image: url(/medias/woman_accueil3.jpg);
+}
+
+.carousel {
+  border-radius: 10px;
+}
