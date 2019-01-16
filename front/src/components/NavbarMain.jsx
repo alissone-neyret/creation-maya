@@ -35,7 +35,7 @@ class NavbarMain extends Component {
                 <Link className="lien-navbar" to="">Panier</Link>
               </NavItem>
               <NavItem>
-                <Link className="lien-navbar" to="">Mon compte</Link>
+                <Link className="lien-navbar" to="/profil">Mon compte</Link>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,0 +1,24 @@
+.ligne-formulaire {
+  justify-content: center;
+  margin-bottom: 5%;
+}
+
+.titre-compte {
+  margin-bottom: 5%;
+}
+
+.ligne-bouton-creation-compte {
+  justify-content: center;
+}
+
+.bouton-creation-compte {
+  margin-bottom: 20%;
+  background-color: green!important;
+  border: 1px solid green!important;
+  padding: 10px!important;
+  font-size: 1.2em!important;
+}
+
+.lien-bouton {
+  color: white;
+}
