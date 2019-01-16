@@ -1,15 +1,14 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './App.css';
-import HomePage from './components/pages/HomePage';
+import { Route } from 'react-router-dom';
+import PageAccueil from './components/pages/PageAccueil';
+import PageBijoux from './components/pages/PageBijoux';
 
-class App extends Component {
-  render() {
-    return (
-      <div className="App">
-        <HomePage/>
-      </div>
-    );
-  }
-}
+const App = () => (
+  <div className="App">
+    <Route onUpdate={window.scrollTo(0,0)} exact path="/" component={PageAccueil} />
+    <Route onUpdate={window.scrollTo(0,0)} exact path="/PageBijoux" component={PageBijoux} />
+  </div>
+);
 
 export default App;

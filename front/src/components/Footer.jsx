@@ -8,7 +8,7 @@ const Footer = () => (
       <Row>
         <Col>
           <ul className="liste-footer">
-            <li>
+            <li className="element-liste-footer">
               Contact
             </li>
             <li>
@@ -19,13 +19,13 @@ const Footer = () => (
         <Col>
           <ul className="liste-footer-logo">
             <li>
-              <img src="/medias/logo.png" alt="logo" />
+              <img src="/medias/logo200White.png" alt="logo" />
             </li>
           </ul>
         </Col>
         <Col>
           <ul className="liste-footer">
-            <li>
+            <li className="element-liste-footer">
               Paiement
             </li>
             <li>

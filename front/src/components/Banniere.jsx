@@ -13,14 +13,14 @@ import './Banniere.css';
 
 const items = [
   {
-    src: '/medias/woman_accueil2.jpg',
+    src: '/medias/bandeauflow.jpg',
   },
   {
-    src: '/medias/women-accueil.jpg',
+    src: '/medias/4.jpg',
   },
   {
-    src: '/medias/women-accueil1.jpg',
-  }
+    src: '/medias/8.jpg',
+  },
 ];
 
 class Example extends Component {
@@ -64,7 +64,7 @@ class Example extends Component {
 
     const slides = items.map((item) => {
       return (
-        <CarouselItem
+        <CarouselItem className="carousel-item-bijoux"
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
@@ -76,9 +76,9 @@ class Example extends Component {
     });
 
     return (
-      <Container className="Banniere">
+      <Container fluid className="Banniere">
         <Row>
-          <Col lg="12">
+          <Col>
             <Carousel 
               activeIndex={activeIndex}
               next={this.next}

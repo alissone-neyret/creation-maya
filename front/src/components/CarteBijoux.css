@@ -1,0 +1,48 @@
+.CarteBijoux {
+  font-family: 'Raleway', sans-serif;
+}
+
+.carte-bijoux {
+  border: 1px solid black!important;
+  margin-bottom: 20%;
+  box-shadow: 3px 3px 3px rgb(192, 192, 192);
+}
+
+.carte-image-bijoux {
+  padding-left: 1px;
+}
+
+.ligne-titre-bijoux {
+  margin-top: 5%;
+  justify-content: center;
+}
+
+.ligne-carte-bijoux {
+  margin-top: 5%;
+}
+
+.corps-carte-bijoux {
+  font-size: 1.3em;
+  text-align: center;
+}
+
+.sous-titre-carte-bijoux {
+  padding-bottom: 5px;
+}
+
+.bouton-panier-bijoux {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: #AF4F8C!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
+  
+}
+
+.bouton-panier-bijoux:hover {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  background-color: white!important;
+  color: #AF4F8C!important;
+  border: 1px solid #AF4F8C!important;
+}

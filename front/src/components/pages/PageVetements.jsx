@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import CardArticle from '../CardArticle';
+import CarteBijoux from '../CarteBijoux';
 
-class JewelsPage extends Component {
+class PageVetements extends Component {
   constructor(props) {
     super(props);
     this.state = {  }
   }
   render() { 
     return ( 
-      <CardArticle/>
+      <CarteBijoux/>
      );
   }
 }
  
-export default JewelsPage;
+export default PageVetements;

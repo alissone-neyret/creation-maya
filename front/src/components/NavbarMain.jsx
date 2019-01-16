@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import './NavbarMain.css';
 
 class NavbarMain extends Component {
@@ -22,22 +23,19 @@ class NavbarMain extends Component {
       <div className="NavbarMain">
         <Navbar expand="md">
           <NavbarBrand className="mr-1 pt-0">
-            <img src="/medias/logo.png" alt="logo" />
+            <Link to="/"><img className="image-logo-accueil" src="/medias/logo200Black.png" alt="logo" /></Link>
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <NavLink to="">Prêt-à-porter</NavLink>
+                <Link className="lien-navbar" to="PageBijoux">Bijoux</Link>
               </NavItem>
               <NavItem>
-                <NavLink to="">Bijoux</NavLink>
+                <Link className="lien-navbar" to="">Panier</Link>
               </NavItem>
               <NavItem>
-                <NavLink to="">Panier</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="">Mon compte</NavLink>
+                <Link className="lien-navbar" to="">Mon compte</Link>
               </NavItem>
             </Nav>
           </Collapse>
