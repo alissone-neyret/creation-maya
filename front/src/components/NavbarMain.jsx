@@ -32,7 +32,7 @@ class NavbarMain extends Component {
                 <Link className="lien-navbar" to="PageBijoux">Bijoux</Link>
               </NavItem>
               <NavItem>
-                <Link className="lien-navbar" to="">Panier</Link>
+                <Link className="lien-navbar" to="/panier">Panier</Link>
               </NavItem>
               <NavItem>
                 <Link className="lien-navbar" to="/profil">Mon compte</Link>

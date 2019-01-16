@@ -102,7 +102,6 @@ class CreationCompte extends Component {
           <Row className="ligne-bouton-creation-compte">
             <Col lg="3">
               <Button className="bouton-creation-compte"><Link className="lien-bouton" to="/panier">Créer le compte</Link></Button>
-              <Button className="bouton"><Link className="lien-bouton" to="/signin">Sign In</Link></Button>
             </Col>
           </Row>
         </Container >

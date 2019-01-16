@@ -1,0 +1,46 @@
+.TableauPanier {
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 5%;
+}
+
+.ligne-titre-panier {
+  margin-bottom: 5%;
+  justify-content: center;
+}
+
+.ligne-tableau-panier {
+  background-color: rgb(253, 242, 221);
+  border-radius: 15px;
+}
+
+.image-panier {
+  width: 50%;
+}
+
+.td-image {
+  width: 40%
+}
+
+.td-panier {
+  vertical-align: middle!important;
+  font-size: 1.5em;
+}
+
+.ligne-bouton-valider {
+  justify-content: flex-end;
+  margin-top: 5%;
+}
+
+.bouton-valider-commande {
+  font-size: 1.3em!important;
+  background-color: rgba(175, 79, 140, 0.651)!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
+}
+
+.bouton-valider-commande:hover {
+  font-size: 1.3em!important;
+  background-color: rgba(175, 79, 140)!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
+}
