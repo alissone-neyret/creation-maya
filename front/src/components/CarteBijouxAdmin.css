@@ -5,3 +5,8 @@
   padding: 20px!important;
   font-size: 1.2em!important;
 }
+
+.ligne-nouvelle-carte {
+  justify-content: center;
+  margin-top: 5%;
+}
