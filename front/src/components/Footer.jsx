@@ -17,12 +17,9 @@ const Footer = () => (
           </ul>
         </Col>
         <Col>
-          <ul className="liste-footer">
+          <ul className="liste-footer-logo">
             <li>
-              Les créations de Maya
-            </li>
-            <li>
-              image
+              <img src="/medias/logo.png" alt="logo" />
             </li>
           </ul>
         </Col>

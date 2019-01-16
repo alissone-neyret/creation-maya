@@ -3,7 +3,6 @@
   color: white;
   font-size: 1.2em;
   padding-top: 2%;
-  padding-bottom: 2%;
   position: relative;
   bottom: 0px;
   width: 100%;
@@ -13,4 +12,9 @@
 .liste-footer {
   list-style-type: none;
   text-align: center;
+}
+
+.liste-footer-logo {
+  text-align: center;
+  margin-top: -2%;
 }

@@ -22,7 +22,7 @@ class NavbarMain extends Component {
       <div className="NavbarMain">
         <Navbar expand="md">
           <NavbarBrand className="mr-1 pt-0">
-            <span>Les Créations de Maya</span>
+            <img src="/medias/logo.png" alt="logo" />
           </NavbarBrand>
           <NavbarToggler onClick={this.toggle} />
           <Collapse isOpen={isOpen} navbar>
