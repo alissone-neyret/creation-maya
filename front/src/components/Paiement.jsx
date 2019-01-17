@@ -45,7 +45,7 @@ class Paiement extends Component {
                         <Label for="crypto">Cryptogramme</Label>
                         <Input type="text" name="crypto" />
                       </FormGroup>
-                      <Button className="bouton-paiement"><Link className="lien-validation" to ="/pageValidation">Valider le paiement</Link></Button>
+                      <Link className="lien-validation" to ="/pageValidation"><Button className="bouton-paiement">Valider le paiement</Button></Link>
                     </Form>
                   </CardBody>
                 </Card>

@@ -43,5 +43,16 @@ router.post('/api/creation-profil', (req, res) => {
   });
 });
 
+router.post('/api/creation-bijoux', (req, res) => {
+  const formData = req.body;
+  connection.query('INSERT into catalogue SET ?', formData, (err) => {
+    if (err) {
+      res.status(500).json({ flash: err.message });
+    } else {
+      res.status(200).json({ flash: 'Le profil a été créé' });
+    }
+  });
+});
+
 
 export default router;
