@@ -14,6 +14,7 @@
 
 .ligne-titre-bijoux {
   margin-top: 5%;
+  margin-bottom: 5%;
   justify-content: center;
 }
 
@@ -28,6 +29,18 @@
 
 .sous-titre-carte-bijoux {
   padding-bottom: 5px;
+}
+
+.bouton-filtre {
+  color: #AF4F8C!important;
+  background-color: white!important;
+  border: 1px solid #AF4F8C!important;
+}
+
+.bouton-filtre:hover {
+  color: white!important;
+  background-color: #AF4F8C!important;
+  border: 1px solid #AF4F8C!important;
 }
 
 .bouton-panier-bijoux {
