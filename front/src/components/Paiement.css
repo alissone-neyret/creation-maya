@@ -7,10 +7,22 @@
   justify-content: flex-end;
 }
 
+.lien-validation {
+  color: white!important;
+}
+
+.bouton-paiement {
+  background-color: green!important;
+}
+
+.bouton-paiement:hover {
+  background-color: green!important;
+  
+}
+
 .bouton-valider-payer {
   font-size: 1.3em!important;
   background-color: rgba(175, 79, 140, 0.651)!important;
-  color: white!important;
   border: 1px solid #AF4F8C!important;
 }
 

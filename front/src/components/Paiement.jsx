@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Collapse, Button, CardBody, Card, Container, Row, Col, Form, FormGroup, Label, Input } from 'reactstrap';
+import { Link } from 'react-router-dom';
 import './Paiement.css';
 
 class Paiement extends Component {
@@ -44,7 +45,7 @@ class Paiement extends Component {
                         <Label for="crypto">Cryptogramme</Label>
                         <Input type="text" name="crypto" />
                       </FormGroup>
-                      <Button>Valider le paiement</Button>
+                      <Button className="bouton-paiement"><Link className="lien-validation" to ="/pageValidation">Valider le paiement</Link></Button>
                     </Form>
                   </CardBody>
                 </Card>

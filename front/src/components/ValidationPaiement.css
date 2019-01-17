@@ -1,0 +1,43 @@
+.ValidationPaiement {
+  font-size: 1.5em;
+}
+
+.ligne-validation {
+  justify-content: center;
+}
+
+.ligne-confirmation {
+  justify-content: center;
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+.image-validation {
+  width: 70%;
+}
+
+.bouton-retour {
+  justify-content: center;
+  margin-bottom: 10%;
+}
+
+.lien-bouton {
+  color: white;
+}
+
+.lien-bouton:hover {
+  color: white;
+  text-decoration: none;
+}
+
+.retour-accueil {
+  font-size: 1em!important;
+  background-color: rgba(175, 79, 140, 0.651)!important;  
+  border: 1px solid #AF4F8C!important;
+}
+
+.retour-accueil:hover {
+  font-size: 1em!important;
+  background-color: rgba(175, 79, 140)!important;
+  border: 1px solid #AF4F8C!important;
+}

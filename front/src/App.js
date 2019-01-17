@@ -6,6 +6,7 @@ import PageBijoux from './components/pages/PageBijoux';
 import PageAdmin from './components/pages/PageAdmin';
 import Profil from './components/pages/Profil';
 import Panier from './components/pages/Panier';
+import PageValidationPaiement from './components/pages/PageValidationPaiement';
 
 const App = () => (
   <div className="App">
@@ -14,6 +15,7 @@ const App = () => (
     <Route onUpdate={window.scrollTo(0,0)} path="/maya-admin" component={PageAdmin} />
     <Route onUpdate={window.scrollTo(0,0)} path="/profil" component={Profil}/>
     <Route onUpdate={window.scrollTo(0,0)} path="/panier" component={Panier}/>
+    <Route onUpdate={window.scrollTo(0,0)} path="/pageValidation" component={PageValidationPaiement} />
   </div>
 );
 
