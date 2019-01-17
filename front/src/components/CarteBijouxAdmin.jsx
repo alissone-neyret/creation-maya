@@ -5,54 +5,24 @@ import {
 } from 'reactstrap';
 import './CarteBijouxAdmin.css';
 
-const bijoux = [
-  {
-    id: 1,
-    nom: "Bracelet demi-jonc en argent",
-    prix: "50 euros",
-    image: "medias/femme-demi-jonc-argent.jpg"
-  },
-  {
-    id: 2,
-    nom: "Bracelet demi-jonc en or",
-    prix: "55 euros",
-    image: "medias/femme-demi-jonc-or.jpg"
-  },
-  {
-    id: 3,
-    nom: "Bracelet demi-jonc en or rose",
-    prix: "55 euros",
-    image: "medias/femme-demi-jonc-plaque-or-rose.jpg"
-  },
-  {
-    id: 4,
-    nom: "Bague plate en argent",
-    prix: "25 euros",
-    image: "medias/bague-medaille-plate-en-argent.jpg"
-  },
-  {
-    id: 5,
-    nom: "Boucle d'oreilles bleu marine",
-    prix: "30 euros",
-    image: "medias/boucles-d-oreilles-cercle-evide-perles-bleu-marine.jpg"
-  },
-  {
-    id: 6,
-    nom: "Bracelet demi-jonc bouddha",
-    prix: "55 euros",
-    image: "medias/demi-jonc-chainette-tete-de-bouddha-en-argent.jpg"
-  },
-
-]
-
 class CarteBijouxAdmin extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bijoux,
+      bijoux: [],
       ajout: false,
     }
     this.ajoutCarte = this.ajoutCarte.bind(this);
+  }
+
+  componentDidMount() {
+    fetch("http://localhost:5000/api/catalogue")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          bijoux: data,
+        })
+      })
   }
 
   ajoutCarte() {

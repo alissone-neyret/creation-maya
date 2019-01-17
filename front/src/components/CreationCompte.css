@@ -1,3 +1,7 @@
+.CreationCompte {
+  margin-top: 5%;
+}
+
 .ligne-formulaire {
   justify-content: center;
   margin-bottom: 5%;
@@ -13,12 +17,45 @@
 
 .bouton-creation-compte {
   margin-bottom: 20%;
-  background-color: green!important;
-  border: 1px solid green!important;
+  background-color: #AF4F8C!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
   padding: 10px!important;
   font-size: 1.2em!important;
 }
 
+.bouton-creation-compte:hover {
+  background-color: white!important;
+  color: #AF4F8C!important;
+  border: 1px solid #AF4F8C!important;
+}
+
 .lien-bouton {
+  color: white;
+}
+
+.ligne-snackbar {
+  margin-bottom: 10%;
+}
+
+.bouton-catalogue {
+  background-color: #AF4F8C!important;
+  border: 1px solid #AF4F8C!important;
+}
+
+.lien-catalogue-compte {
+  color: white;
+  text-decoration: none; 
+}
+
+.lien-catalogue-compte:hover {
+  color: white; 
+}
+
+.lien-accueil-compte {
+  color: white;
+}
+
+.lien-accueil-compte:hover {
   color: white;
 }

@@ -5,41 +5,24 @@ import {
 } from 'reactstrap';
 import './CarteBijouxTop.css';
 
-const bijoux = [
-  {
-    id: 1,
-    nom: "Bague plate en argent",
-    prix: "25 euros",
-    image: "medias/bague-medaille-plate-en-argent.jpg"
-  },
-  {
-    id: 2,
-    nom: "Boucle d'oreilles bleu marine",
-    prix: "30 euros",
-    image: "medias/boucles-d-oreilles-cercle-evide-perles-bleu-marine.jpg"
-  },
-  {
-    id: 3,
-    nom: "Bracelet demi-jonc bouddha",
-    prix: "55 euros",
-    image: "medias/demi-jonc-chainette-tete-de-bouddha-en-argent.jpg"
-  },
-  {
-    id: 7,
-    nom: "Collier chaine et pompon",
-    prix: "30 euros",
-    image: "medias/collier-chaine-medaille-et-pompon.jpg"
-  },
-]
-
 class CarteBijouxTop extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      bijoux,
+      bijoux: [],
     }
   }
 
+  componentDidMount() {
+    fetch("http://localhost:5000/api/catalogue/top")
+      .then(response => response.json())
+      .then(data => {
+        this.setState({
+          bijoux: data,
+        })
+      })
+  }
+  
 
   render() {
     return (

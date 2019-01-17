@@ -3,7 +3,6 @@ import NavbarMain from '../NavbarMain';
 import { Container, Row, Col } from 'reactstrap';
 import Footer from '../Footer';
 import CreationCompte from '../CreationCompte';
-import Banniere from '../Banniere';
 
 class Profil extends Component {
   constructor(props) {
@@ -15,7 +14,6 @@ class Profil extends Component {
       <div className="PageBijoux">
         <header>
           <NavbarMain />
-          <Banniere />
         </header>
         <section>
         <Container>
