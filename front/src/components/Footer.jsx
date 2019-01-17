@@ -19,7 +19,7 @@ const Footer = () => (
         <Col>
           <ul className="liste-footer-logo">
             <li>
-              <img src="/medias/logo200White.png" alt="logo" />
+              <img src="/medias/logo200Black.png" alt="logo" />
             </li>
           </ul>
         </Col>

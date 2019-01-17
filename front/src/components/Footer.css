@@ -1,13 +1,13 @@
 .Footer {
   font-family: 'Raleway', sans-serif;
-  background-color: rgb(44, 44, 44);
-  color: white;
+  background-color: #D8CBCA;
+  color: black;
   font-size: 1.2em;
   padding-top: 2%;
   position: relative;
   bottom: 0px;
   width: 100%;
-  box-shadow: -3px -3px 4px rgb(167, 167, 167);
+  box-shadow: -3px -3px 4px rgb(194, 191, 191);
 }
 
 .liste-footer {

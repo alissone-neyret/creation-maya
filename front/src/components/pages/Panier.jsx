@@ -3,6 +3,7 @@ import NavbarMain from '../NavbarMain';
 import Footer from '../Footer';
 import Banniere from '../Banniere';
 import TableauPanier from '../TableauPanier';
+import Paiement from '../Paiement';
 
 const Panier = () => (
   <div className="PageAccueil">
@@ -13,6 +14,7 @@ const Panier = () => (
 
     <section>
       <TableauPanier />
+      <Paiement />
     </section>
 
     <footer>

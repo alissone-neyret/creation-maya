@@ -1,18 +1,28 @@
 .NavbarMain {  
+  background-color:#D8CBCA;
   font-family: 'Raleway', sans-serif;
-  font-size: 1.5em;
-  box-shadow: 3px 3px 4px rgb(173, 173, 173);
+  font-size: 1.6em;
+  box-shadow: 3px 3px 4px rgb(194, 191, 191);
 }
 
-.lien-navbar {
+.image-logo-navbar {
+  width: 60%;
+}
+
+.lien-navbar-bijoux {
   color: black;
+  margin-right: 20px;
 }
 
-.lien-navbar:hover {
+.nav-item-navbar {
+  width : 60px;
+}
+
+.lien-navbar-bijoux:hover {
   color: #AF4F8C;
   text-decoration: none;
 }
 
 .nav-item {
-  margin-right: 50px;
+  margin-right: 30px;
 }

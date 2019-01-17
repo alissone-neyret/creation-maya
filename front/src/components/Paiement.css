@@ -1,0 +1,22 @@
+.ligne-paiement {
+  justify-content: flex-end;
+  margin-bottom: 3%;
+}
+
+.ligne-formulaire-paiement {
+  justify-content: flex-end;
+}
+
+.bouton-valider-payer {
+  font-size: 1.3em!important;
+  background-color: rgba(175, 79, 140, 0.651)!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
+}
+
+.bouton-valider-payer:hover {
+  font-size: 1.3em!important;
+  background-color: rgba(175, 79, 140)!important;
+  color: white!important;
+  border: 1px solid #AF4F8C!important;
+}

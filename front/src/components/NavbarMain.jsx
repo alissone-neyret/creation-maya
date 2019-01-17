@@ -29,13 +29,13 @@ class NavbarMain extends Component {
           <Collapse isOpen={isOpen} navbar>
             <Nav className="ml-auto" navbar>
               <NavItem>
-                <Link className="lien-navbar" to="PageBijoux">Bijoux</Link>
+                <Link className="lien-navbar-bijoux" to="PageBijoux">Bijoux</Link>
               </NavItem>
-              <NavItem>
-                <Link className="lien-navbar" to="/panier">Panier</Link>
+              <NavItem className="nav-item-navbar">
+                <Link className="lien-navbar" to="/panier"><img className="image-logo-navbar" src="/medias/panier.png" alt="logo" /></Link>
               </NavItem>
-              <NavItem>
-                <Link className="lien-navbar" to="/profil">Mon compte</Link>
+              <NavItem className="nav-item-navbar">
+                <Link className="lien-navbar" to="/profil"><img className="image-logo-navbar"  src="/medias/profil.png" alt="logo" /></Link>
               </NavItem>
             </Nav>
           </Collapse>

@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Table, Container, Row, Col, Button } from 'reactstrap';
+import { Table, Container, Row, Col } from 'reactstrap';
 import './TableauPanier.css';
 
 const panier = [
@@ -40,15 +40,7 @@ class TableauPanier extends Component {
               ))}
             </Table>
           </Row>
-          <Row className="ligne-bouton-valider">
-            <Col lg="4">
-              <Button className="bouton-valider-commande">Valider la commande et payer</Button>
-            </Col>
-          </Row>
         </Container>
-
-
-
       </div>
     );
   }
