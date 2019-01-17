@@ -59,7 +59,6 @@ class CarteBijoux extends Component {
 
 
   render() {
-    console.log(this.state.bijoux)
     return (
       <div className="CarteBijoux">
         <Container>
@@ -93,7 +92,7 @@ class CarteBijoux extends Component {
                     <CardTitle>{element.nom}</CardTitle>
                     <CardSubtitle className="sous-titre-carte-bijoux">{element.prix} euros</CardSubtitle>
                     <hr />
-                    <Button className="bouton-panier-bijoux" onClick={this.ajoutPanier}>Ajouter au panier</Button>
+                    <Button className="bouton-panier-bijoux" onClick={()=> this.props.ajoutArticle(element)}>Ajouter au panier</Button>
                   </CardBody>
                 </Card>
               </Col>

@@ -1,0 +1,21 @@
+.PageConnection {
+  font-family: 'Raleway', sans-serif;
+}
+
+.container-page-connection {
+  margin-top: 10%;
+  margin-bottom: 15%;
+  padding: 3%;
+}
+
+.formulaire-page-connection {
+  border: 1px solid rgb(218, 218, 218);
+  padding: 10%;
+  border-radius: 3px;
+}
+
+.carte-inscription {
+  margin-top: 6%;
+  padding: 23%!important;
+  margin-top: 0px;
+}

@@ -3,6 +3,7 @@ import NavbarMain from '../NavbarMain';
 import Footer from '../Footer';
 import Banniere from '../Banniere';
 import ValidationPaiement from '../ValidationPaiement';
+import './PageValidationPaiement.css';
 
 const PageValidationPaiement = () => (
   <div className="PageAccueil">

@@ -3,6 +3,7 @@ import NavbarMain from '../NavbarMain';
 import { Container, Row, Col } from 'reactstrap';
 import Footer from '../Footer';
 import CreationCompte from '../CreationCompte';
+import './Profil.css';
 
 class Profil extends Component {
   constructor(props) {

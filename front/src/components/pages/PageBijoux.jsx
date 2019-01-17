@@ -3,6 +3,7 @@ import CarteBijoux from '../CarteBijoux';
 import NavbarMain from '../NavbarMain';
 import { Container, Row, Col } from 'reactstrap';
 import Footer from '../Footer';
+import './PageBijoux.css';
 
 class PageBijoux extends Component {
   constructor(props) {
@@ -19,7 +20,7 @@ class PageBijoux extends Component {
         <Container>
           <Row>
             <Col>
-              <CarteBijoux />
+              <CarteBijoux ajoutArticle={this.props.ajoutArticle}/>
             </Col>
           </Row>
         </Container>
