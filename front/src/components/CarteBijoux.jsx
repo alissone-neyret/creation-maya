@@ -57,7 +57,6 @@ class CarteBijoux extends Component {
     })
   }
 
-
   render() {
     return (
       <div className="CarteBijoux">

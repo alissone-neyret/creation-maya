@@ -7,6 +7,7 @@ class CatalogueAdmin extends Component {
     this.state = {
       bijoux: [],
     }
+    this.supprimerArticle = this.supprimerArticle.bind(this);
   }
 
   componentDidMount() {
@@ -16,6 +17,21 @@ class CatalogueAdmin extends Component {
         this.setState({
           bijoux: data,
         })
+      })
+  }
+
+  supprimerArticle(id) {
+    console.log(id.id)
+    fetch('http://localhost:5000/maya-admin/' + id, {
+      method: 'delete'
+    })
+      .then(res => res)
+      .then( () => {
+        fetch('http://localhost:5000/api/catalogue')
+          .then( res => res.json())
+          .then (data => this.setState({
+            bijoux: data
+          }))
       })
   }
 
@@ -30,9 +46,9 @@ class CatalogueAdmin extends Component {
                 <CardImg className="carte-image-bijoux" top src={element.image} alt="Card image cap" />
                 <CardBody className="corps-carte-bijoux">
                   <CardTitle>{element.nom}</CardTitle>
-                  <CardSubtitle className="sous-titre-carte-bijoux">{element.prix}</CardSubtitle>
+                  <CardSubtitle className="sous-titre-carte-bijoux">{element.prix} euros</CardSubtitle>
                   <hr />
-                  <Button className="bouton-panier-bijoux" onClick={this.ajoutPanier}>Ajouter au panier</Button>
+                  <Button onClick={this.supprimerArticle} color="danger">Supprimer article</Button>
                 </CardBody>
               </Card>
             </Col>

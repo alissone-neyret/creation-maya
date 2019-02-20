@@ -19,12 +19,13 @@ class PageConnection extends Component {
         </header>
         <section>
           <Container className="container-page-connection">
+            <Row className="ligne-titre-connection"><h3>Se connecter</h3></Row>
             <Row className="ligne-page-connection">
               <Col>
                 <Form className="formulaire-page-connection">
                   <FormGroup>
                     <Label for="email">Email</Label>
-                    <Input valid type="email" name="email" placeholder="exemple@gmail.com" />
+                    <Input required type="email" name="email" placeholder="exemple@gmail.com" />
                   </FormGroup>
                   <FormGroup>
                     <Label for="mdp">Mot de passe</Label>

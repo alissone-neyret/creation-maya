@@ -54,5 +54,16 @@ router.post('/api/creation-bijoux', (req, res) => {
   });
 });
 
+router.delete('/maya-admin/:id', (req, res) => {
+  const idArticle = req.params.id;
+  connection.query('DELETE from catalogue WHERE id=?', idArticle, (err) => {
+    if (err) {
+      res.status(500).send('Erreur lors de la suppression');
+    } else {
+      res.sendStatus(200);
+    }
+  });
+});
+
 
 export default router;
