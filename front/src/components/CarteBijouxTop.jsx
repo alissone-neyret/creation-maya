@@ -40,7 +40,7 @@ class CarteBijouxTop extends Component {
                   <CardImg className="carte-image-bijoux" top src={element.image} alt="Card image cap" />
                   <CardBody className="corps-carte-bijoux">
                     <CardTitle>{element.nom}</CardTitle>
-                    <CardSubtitle className="sous-titre-carte-bijoux">{element.prix}</CardSubtitle>
+                    <CardSubtitle className="sous-titre-carte-bijoux">{element.prix} euros</CardSubtitle>
                     <Button className="bouton-panier-bijoux" onClick={this.ajoutPanier}>Ajouter au panier</Button>
                   </CardBody>
                 </Card>

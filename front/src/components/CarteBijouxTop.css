@@ -1,9 +1,17 @@
 .carte-bijoux-top {
   font-family: 'Raleway', sans-serif;
+  box-shadow: 3px 3px 10px rgb(170, 170, 170);
+  border-radius: 10px!important;
+}
+
+h2 {
+  font-family: 'Dancing Script', cursive!important;
+  font-size: 3em!important;
 }
 
 .carte-image-bijoux {
   padding-top: 1px;
+  border-radius: 10px!important;
 }
 
 .container-carte-bijoux-top {
