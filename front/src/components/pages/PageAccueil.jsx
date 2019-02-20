@@ -5,6 +5,7 @@ import Banniere from '../Banniere';
 import CarteBijouxTop from '../CarteBijouxTop';
 import { Container } from 'reactstrap';
 import './PageAccueil.css';
+import ButtonBackToTop from '../ButtonBackToTop';
 
 const PageAccueil = () => (
   <div className="PageAccueil">
@@ -17,6 +18,7 @@ const PageAccueil = () => (
       <Container fluid className="container-fluid-homepage-top">
       <CarteBijouxTop />
       </Container>
+      <ButtonBackToTop />
     </section>
 
     <footer>

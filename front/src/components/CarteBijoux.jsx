@@ -62,8 +62,8 @@ class CarteBijoux extends Component {
       <div className="CarteBijoux">
         <Container>
           <Row className="ligne-titre-bijoux">
-            <Col lg="3">
-              <h3>Les bijoux de Maya</h3>
+            <Col className="titre-page-catalogue" lg="3">
+              <h3>Catalogue</h3>
             </Col>
           </Row>
           <Row className="justify-content-center">

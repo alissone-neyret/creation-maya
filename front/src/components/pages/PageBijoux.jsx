@@ -4,6 +4,7 @@ import NavbarMain from '../NavbarMain';
 import { Container, Row, Col } from 'reactstrap';
 import Footer from '../Footer';
 import './PageBijoux.css';
+import ButtonBackToTop from '../ButtonBackToTop';
 
 class PageBijoux extends Component {
   constructor(props) {
@@ -24,6 +25,7 @@ class PageBijoux extends Component {
             </Col>
           </Row>
         </Container>
+        <ButtonBackToTop />
         </section>
 
         <footer>
