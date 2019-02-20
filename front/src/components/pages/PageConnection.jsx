@@ -17,7 +17,7 @@ class PageConnection extends Component {
         <header>
           <NavbarMain />
         </header>
-        <section>
+        <section className="container-fluid-page-connection">
           <Container className="container-page-connection">
             <Row className="ligne-titre-connection"><h3>Se connecter</h3></Row>
             <Row className="ligne-page-connection">
@@ -31,13 +31,13 @@ class PageConnection extends Component {
                     <Label for="mdp">Mot de passe</Label>
                     <Input type="password" name="password" />
                   </FormGroup>
-                  <NavLink to="/panier"><Button>Connection</Button></NavLink>
+                  <NavLink to="/panier"><Button className="bouton-connection">Connection</Button></NavLink>
                 </Form>
               </Col>
               <Col>
                 <Card body className="carte-inscription">
-                  <CardTitle>Pas encore inscrit ?</CardTitle>
-                  <NavLink to="/profil"><Button>Créer mon compte</Button></NavLink>
+                  <CardTitle><h4>Pas encore inscrit ?</h4></CardTitle>
+                  <NavLink to="/profil"><Button className="bouton-connection">Créer mon compte</Button></NavLink>
                 </Card>
               </Col>
             </Row>

@@ -2,24 +2,46 @@
   font-family: 'Raleway', sans-serif;
 }
 
+.container-fluid-page-connection {
+  width: 100%;
+  background-color: #F7E5DA;
+}
+
 .container-page-connection {
-  margin-top: 10%;
-  margin-bottom: 15%;
-  padding: 3%;
+  padding-bottom: 8%;
 }
 
 .ligne-titre-connection {
   margin-bottom: 50px;
+  padding-top: 10.5%;
 }
 
 .formulaire-page-connection {
-  border: 1px solid rgb(218, 218, 218);
+  height: 300px;
+  border: 1px solid rgb(128, 128, 128);
   padding: 10%;
   border-radius: 3px;
+  background-color: rgb(252, 241, 235);
 }
 
 .carte-inscription {
   margin-top: 6%;
-  padding: 23%!important;
-  margin-top: 0px;
+  border: 1px solid rgb(128, 128, 128)!important;
+  height: 300px;
+  margin: 0px;
+  background-color:  rgb(252, 241, 235)!important;
+  text-align: center;
+  justify-content: center;
+}
+
+.bouton-connection {
+  color: #AF4F8C!important;
+  background-color: white!important;
+  border: 1px solid #AF4F8C!important;
+}
+
+.bouton-connection:hover {
+  color: white!important;
+  background-color: #AF4F8C!important;
+  border: 1px solid #AF4F8C!important;
 }
