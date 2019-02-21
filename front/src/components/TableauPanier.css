@@ -9,13 +9,16 @@
   justify-content: center;
 }
 
-.ligne-tableau-panier {
+.container-panier {
+  padding-top: 20px;
   background-color: rgb(253, 242, 221);
   border-radius: 15px;
 }
 
 .image-panier {
   width: 50%;
+  padding: 4%;
+  border-radius: 50%;
 }
 
 .td-image {

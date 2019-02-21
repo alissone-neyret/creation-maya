@@ -8,7 +8,6 @@
   cursor: pointer;
   border-radius: 50%;
   padding: 0;
-  border: none;
   border: 2px solid #AF4F8C;
 }
 
@@ -16,3 +15,4 @@
   width: 90px;
   padding: 15px;
 }
+

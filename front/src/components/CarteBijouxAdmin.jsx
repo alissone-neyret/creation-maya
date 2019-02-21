@@ -36,8 +36,8 @@ class CarteBijouxAdmin extends Component {
       <div className="CarteBijouxAdmin">
         <Container>
           <Row className="ligne-titre-bijoux">
-            <Col lg={{ size: 5, offset: 1 }}>
-              <h3>Administration du catalogue</h3>
+            <Col lg="5">
+              <h3>Gestion du catalogue</h3>
             </Col>
           </Row>
           <Row className="ligne-titre-bijoux">

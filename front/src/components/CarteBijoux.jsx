@@ -85,7 +85,7 @@ class CarteBijoux extends Component {
               (element.prix >= this.state.prixMin) && (element.prix <= this.state.prixMax) 
             )).map((element) => (
               <Col lg="4">
-                <Card className="carte-bijoux">
+                <Card className="carte-bijoux" key={element.id}>
                   <CardImg className="carte-image-bijoux" top src={element.image} alt="Card image cap" />
                   <CardBody className="corps-carte-bijoux">
                     <CardTitle>{element.nom}</CardTitle>

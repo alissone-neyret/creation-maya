@@ -19,10 +19,10 @@ class App extends Component {
   }
 
   ajoutArticle(article) {
-    console.log(article)
     this.setState({
-      panier: [...this.state.panier, article]
+      panier: [...this.state.panier, article]      
     })
+    console.log("state panier app",this.state.panier)
   }
 
   componentDidUpdate() {

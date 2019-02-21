@@ -1,13 +1,14 @@
 import React, { Component } from 'react';
-import { Row, Col, Button, Card, CardImg, CardBody, CardTitle, CardSubtitle } from 'reactstrap';
+import { Row, Col, Button, Card, CardImg, CardBody, CardTitle, CardSubtitle, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
 
 class CatalogueAdmin extends Component {
   constructor(props) {
     super(props);
     this.state = {
       bijoux: [],
+      modal: false,
     }
-    this.supprimerArticle = this.supprimerArticle.bind(this);
+    this.toggle = this.toggle.bind(this);
   }
 
   componentDidMount() {
@@ -26,19 +27,26 @@ class CatalogueAdmin extends Component {
       method: 'delete'
     })
       .then(res => res)
-      .then( () => {
+      .then(() => {
         fetch('http://localhost:5000/api/catalogue')
-          .then( res => res.json())
-          .then (data => this.setState({
+          .then(res => res.json())
+          .then(data => this.setState({
             bijoux: data
           }))
       })
   }
 
+  toggle() {
+    const { modal } = this.state;
+    this.setState({
+      modal: !modal,
+    });
+  }
+
   render() {
     return (
       <div className="CatalogueAdmin">
-        
+
         <Row className="ligne-carte-bijoux">
           {this.state.bijoux.map((element) => (
             <Col lg="4">
@@ -48,7 +56,7 @@ class CatalogueAdmin extends Component {
                   <CardTitle>{element.nom}</CardTitle>
                   <CardSubtitle className="sous-titre-carte-bijoux">{element.prix} euros</CardSubtitle>
                   <hr />
-                  <Button onClick={this.supprimerArticle} color="danger">Supprimer article</Button>
+                  <Button onClick={this.toggle} color="danger">Supprimer article</Button>
                 </CardBody>
               </Card>
             </Col>
